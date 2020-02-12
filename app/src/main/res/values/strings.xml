@@ -1,0 +1,4 @@
+<resources>
+  <string name="app_name">Logica app</string>
+  <string name="conjunction_and">Conjunction (AND)</string>
+</resources>
