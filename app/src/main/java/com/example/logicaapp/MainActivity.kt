@@ -26,15 +26,10 @@ class MainActivity : AppCompatActivity() {
     private fun getFields() {
         val list: ArrayList<String> = ArrayList()
 
-        val field1 = inputField1.text.toString().trim()
-        val field2 = inputField2.text.toString().trim()
-        val field3 = inputField3.text.toString().trim()
-        val field4 = inputField4.text.toString().trim()
-
-        list.add(field1)
-        list.add(field2)
-        list.add(field3)
-        list.add(field4)
+        list.add(inputField1.text.toString().trim())
+        list.add(inputField2.text.toString().trim())
+        list.add(inputField3.text.toString().trim())
+        list.add(inputField4.text.toString().trim())
 
         compareArray(list)
     }
