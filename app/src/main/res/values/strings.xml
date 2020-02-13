@@ -1,4 +1,11 @@
 <resources>
   <string name="app_name">Logica app</string>
   <string name="conjunction_and">Conjunction (AND)</string>
+    <string name="titleA">A</string>
+  <string name="titleB">B</string>
+  <string name="titleAB">A^B</string>
+  <string name="T1">T</string>
+  <string name="Input">Input</string>
+  <string name="F1">F</string>
+  <string name="submit">Submit</string>
 </resources>
