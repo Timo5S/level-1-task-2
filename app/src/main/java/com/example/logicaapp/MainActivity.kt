@@ -7,13 +7,16 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
+  override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        InitViews()
-    }
+        initViews()
+  }
 
-    private fun InitViews() {
+  /**
+   * Set the initial (UI) state of the app.
+   */
+  private fun initViews() {
         submitButton.setOnClickListener{
             getFields()
             inputField1.setText("")
@@ -23,7 +26,10 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun getFields() {
+  /**
+   * Get the textfields and add to the array
+   */
+  private fun getFields() {
         val list: ArrayList<String> = ArrayList()
 
         list.add(inputField1.text.toString().trim())
@@ -34,7 +40,10 @@ class MainActivity : AppCompatActivity() {
         compareArray(list)
     }
 
-    private fun compareArray(list: ArrayList<String>) {
+  /**
+   * Compare the correctlist of values to the given list of values
+   */
+  private fun compareArray(list: ArrayList<String>) {
         //hardcoded array as these values are always the correctValues
         val correctList = arrayOf("T", "F", "F", "F")
 
@@ -50,7 +59,10 @@ class MainActivity : AppCompatActivity() {
         showToast(correct)
     }
 
-    private fun showToast(correct: Int) {
+  /**
+   * showtoast for correct given values
+   */
+  private fun showToast(correct: Int) {
         Toast.makeText(this, "correct amount is: $correct", Toast.LENGTH_LONG).show()
 
     }
